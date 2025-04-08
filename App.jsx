@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react'
 import Todo from './components/Todo'
 import Auth from "./components/Auth";
 import { ToastContainer } from 'react-toastify';
-
-
 const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
   useEffect(()=>{
@@ -18,7 +16,6 @@ const App = () => {
       <div>
         <Todo />
       </div>
-         
       ): (
         <div className='h-screen flex items-center justify-center bg-gray-100'>
           <Auth setIsAuthenticated={setIsAuthenticated} />
